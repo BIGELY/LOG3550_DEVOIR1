@@ -140,3 +140,13 @@ Enfin, le développement responsive a nécessité l'utilisation de CSS Grid et d
 * Outils de développement du navigateur pour tester le responsive design et déboguer JavaScript.
 * Validateur W3C pour vérifier la conformité du HTML.
 * ChatGPT pour obtenir de l'aide sur la compréhension des concepts, la résolution de problèmes et la vérification du code.
+
+## Validation et accessibilité
+
+Le formulaire utilise des labels associés aux champs afin de faciliter son utilisation avec un clavier et les technologies d'assistance.
+
+Les messages d'erreur sont associés aux champs concernés et utilisent `aria-live` pour informer les utilisateurs des erreurs de validation.
+
+La page a été conçue avec des éléments HTML5 sémantiques et une navigation accessible au clavier.
+
+Le document HTML a été vérifié avec le validateur W3C afin de détecter les erreurs de structure.
