@@ -1,0 +1,251 @@
+/* =========================
+   VARIABLES CSS
+   ========================= */
+
+:root {
+    --couleur-principale: #1f4e78;
+    --couleur-secondaire: #eaf2f8;
+    --couleur-fond: #f7f9fb;
+    --couleur-texte: #222222;
+    --couleur-blanc: #ffffff;
+    --couleur-disponible: #198754;
+    --couleur-emprunte: #dc3545;
+    --couleur-focus: #ff9800;
+
+    --espacement-petit: 0.5rem;
+    --espacement-moyen: 1rem;
+    --espacement-grand: 2rem;
+
+    --rayon: 8px;
+}
+
+
+/* =========================
+   STYLE GÉNÉRAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--couleur-texte);
+    background-color: var(--couleur-fond);
+}
+
+header {
+    background-color: var(--couleur-principale);
+    color: var(--couleur-blanc);
+    padding: var(--espacement-moyen);
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: var(--espacement-petit);
+}
+
+nav a {
+    color: var(--couleur-blanc);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =========================
+   ÉTATS DES LIENS
+   ========================= */
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a:focus-visible {
+    outline: 3px solid var(--couleur-focus);
+    outline-offset: 3px;
+}
+
+
+/* =========================
+   CONTENU PRINCIPAL
+   ========================= */
+
+main {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+    padding: var(--espacement-grand) 0;
+}
+
+section {
+    margin-bottom: var(--espacement-grand);
+}
+
+
+/* =========================
+   CARTES DES LIVRES
+   ========================= */
+
+#liste-livres {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espacement-moyen);
+}
+
+.carte-livre {
+    background-color: var(--couleur-blanc);
+    border: 1px solid #d9d9d9;
+    border-radius: var(--rayon);
+    padding: var(--espacement-moyen);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.carte-livre:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================
+   ÉTIQUETTES DE DISPONIBILITÉ
+   ========================= */
+
+.disponible {
+    display: inline-block;
+    background-color: var(--couleur-disponible);
+    color: var(--couleur-blanc);
+    padding: 0.25rem 0.6rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.emprunte {
+    display: inline-block;
+    background-color: var(--couleur-emprunte);
+    color: var(--couleur-blanc);
+    padding: 0.25rem 0.6rem;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   FORMULAIRE
+   ========================= */
+
+form {
+    background-color: var(--couleur-blanc);
+    padding: var(--espacement-moyen);
+    border-radius: var(--rayon);
+    border: 1px solid #d9d9d9;
+}
+
+form div {
+    margin-bottom: var(--espacement-moyen);
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: var(--espacement-petit);
+}
+
+input,
+select,
+button {
+    font: inherit;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #777777;
+    border-radius: 5px;
+}
+
+input:focus-visible,
+select:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--couleur-focus);
+    outline-offset: 2px;
+}
+
+
+/* =========================
+   BOUTON
+   ========================= */
+
+button {
+    background-color: var(--couleur-principale);
+    color: var(--couleur-blanc);
+    border: none;
+    padding: 0.7rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #163a5c;
+}
+
+button:disabled {
+    background-color: #999999;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    background-color: var(--couleur-principale);
+    color: var(--couleur-blanc);
+    text-align: center;
+    padding: var(--espacement-moyen);
+}
+
+
+/* =========================
+   TABLETTE
+   ========================= */
+
+@media (min-width: 600px) {
+    #liste-livres {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* =========================
+   ORDINATEUR
+   ========================= */
+
+@media (min-width: 1000px) {
+    #liste-livres {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.message-erreur {
+    color: var(--couleur-emprunte);
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 0.25rem;
+}
