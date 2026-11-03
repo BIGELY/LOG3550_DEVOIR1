@@ -1,0 +1,9 @@
+# Fichiers temporaires Windows
+Thumbs.db
+Desktop.ini
+
+# Fichiers temporaires macOS
+.DS_Store
+
+# Fichiers journaux
+*.log
