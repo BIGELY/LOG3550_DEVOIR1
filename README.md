@@ -150,3 +150,13 @@ Les messages d'erreur sont associés aux champs concernés et utilisent `aria-li
 La page a été conçue avec des éléments HTML5 sémantiques et une navigation accessible au clavier.
 
 Le document HTML a été vérifié avec le validateur W3C afin de détecter les erreurs de structure.
+
+## Tests responsive
+
+L’interface a été testée sur trois formats d’écran afin de vérifier son adaptation aux différentes tailles d’affichage :
+
+- Ordinateur portable : `captures/laptop.png`
+- Tablette : `captures/tablette.png`
+- Téléphone mobile : `captures/mobile.png`
+
+Les tests ont confirmé que la mise en page reste lisible et fonctionnelle sur les différents formats d’écran.
