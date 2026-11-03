@@ -181,9 +181,17 @@ Les fonctionnalités principales de l'application ont été testées :
 
 Les tests ont confirmé le bon fonctionnement des fonctionnalités principales.
 
+### Validation W3C
+
+La page HTML a été validée avec le validateur W3C et aucune erreur n’a été détectée.
+
+Capture du résultat :
+
+![Validation W3C](captures/captures%20w3c.png)
 
 ## Dépôt GitHub
 
 Le code source du projet est disponible sur GitHub :
 
 https://github.com/BIGELY/LOG3550_DEVOIR1
+ 
