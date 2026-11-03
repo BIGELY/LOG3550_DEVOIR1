@@ -27,6 +27,10 @@ devoir1/
 ├── js/
 │   ├── data.js
 │   └── app.js
+├── captures/
+│   ├── laptop.png
+│   ├── tablette.png
+│   └── mobile.png
 └── README.md
 ```
 
