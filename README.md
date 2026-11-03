@@ -180,3 +180,10 @@ Les fonctionnalités principales de l'application ont été testées :
 * Vérification de la validation des champs du formulaire.
 
 Les tests ont confirmé le bon fonctionnement des fonctionnalités principales.
+
+
+## Dépôt GitHub
+
+Le code source du projet est disponible sur GitHub :
+
+https://github.com/BIGELY/LOG3550_DEVOIR1
