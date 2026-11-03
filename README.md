@@ -164,3 +164,19 @@ L’interface a été testée sur trois formats d’écran afin de vérifier son
 - Téléphone mobile : `captures/mobile.png`
 
 Les tests ont confirmé que la mise en page reste lisible et fonctionnelle sur les différents formats d’écran.
+
+## Tests fonctionnels
+
+Les fonctionnalités principales de l'application ont été testées :
+
+* Affichage des 8 livres initiaux.
+* Recherche par titre et par auteur.
+* Filtrage par catégorie et disponibilité.
+* Tri des livres par titre et par année.
+* Ajout d'un nouveau livre.
+* Suppression d'un livre.
+* Réinitialisation du catalogue.
+* Vérification de la sauvegarde des données avec localStorage.
+* Vérification de la validation des champs du formulaire.
+
+Les tests ont confirmé le bon fonctionnement des fonctionnalités principales.
